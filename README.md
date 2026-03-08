@@ -33,6 +33,8 @@ Setelah menyelesaikan konfigurasi di Firebase Console (membuat project, mengakti
 1. Buat Environment baru di Postman, lalu beri nama "Firebase Auth Dev", namun saya memberi nama dengan Global Environment
 <img width="785" height="384" alt="image" src="https://github.com/user-attachments/assets/2c02e9e4-13b2-48a1-ae4a-d5ce446bbfb9" />
 
+2. Ubah method nya menjadi POST
+<img width="766" height="653" alt="image" src="https://github.com/user-attachments/assets/6370ea96-985d-47b8-be01-be8da006f4ae" />
 
 
  
