@@ -36,5 +36,8 @@ Setelah menyelesaikan konfigurasi di Firebase Console (membuat project, mengakti
 2. Ubah method nya menjadi POST
 <img width="766" height="653" alt="image" src="https://github.com/user-attachments/assets/6370ea96-985d-47b8-be01-be8da006f4ae" />
 
-
+3. Masukkan URL berikut di kolom URL : https://identitytoolkit.googleapis.com/v1/accounts:signUp?key={{FIREBASE_API_KEY}}
+4. Pindah ke Tab Headers, tambahkan key = Content-Type, Value = application/json
+<img width="1896" height="378" alt="image" src="https://github.com/user-attachments/assets/6be9f56c-89f6-4841-a1b8-db098e0b228c" />
+ 
  
