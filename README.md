@@ -5,4 +5,5 @@ Repositori ini berisi dokumentasi teknis mengenai pengujian alur End-to-End Auth
 
 Persiapan awal sebelum melakukan request pada Postman, langkah pertama adalah melakukan setup pada Firebase Console:
 1. Akses Firebase.com
-<img width="1873" height="763" alt="image" src="https://github.com/user-attachments/assets/cd0d9d23-a860-4d9c-978e-65280f2c25aa" />
+<img width="1882" height="828" alt="image" src="https://github.com/user-attachments/assets/027ed070-3e3f-4ea9-9104-8193857be387" />
+
