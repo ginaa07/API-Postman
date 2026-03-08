@@ -9,3 +9,7 @@ Persiapan awal sebelum melakukan request pada Postman, langkah pertama adalah me
 
 2. Setelah itu membuat project dengan mengAkses Firebase Console 
 <img width="1782" height="808" alt="image" src="https://github.com/user-attachments/assets/794795ce-a8cd-4abc-8c8b-33cf06588cf8" />
+
+3. Buat project baru di Firebase
+<img width="1215" height="721" alt="image" src="https://github.com/user-attachments/assets/c5cfee89-d4d6-4bf6-80e4-97a7ea6bd52f" />
+
