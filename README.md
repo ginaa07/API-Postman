@@ -28,4 +28,11 @@ Persiapan awal sebelum melakukan request pada Postman, langkah pertama adalah me
 
 8. Lalu buat Web App
 <img width="1757" height="739" alt="image" src="https://github.com/user-attachments/assets/e76e3308-45a8-436e-a5ac-7e9b60646975" />
+
+Setelah menyelesaikan konfigurasi di Firebase Console (membuat project, mengaktifkan Auth, dan menyalin Web API Key), Lalu buka aplikasi Postman dan ikuti urutan berikut:
+1. Buat Environment baru di Postman, lalu beri nama "Firebase Auth Dev", namun saya memberi nama dengan Global Environment
+<img width="785" height="384" alt="image" src="https://github.com/user-attachments/assets/2c02e9e4-13b2-48a1-ae4a-d5ce446bbfb9" />
+
+
+
  
