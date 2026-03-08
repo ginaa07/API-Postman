@@ -20,7 +20,8 @@ Persiapan awal sebelum melakukan request pada Postman, langkah pertama adalah me
 
 
 6. Untuk Mendapatkan Web API Key kita Pergi ke Project Settings lalu General
-<img width="1888" height="792" alt="image" src="https://github.com/user-attachments/assets/57d61d8e-8ccb-406c-ac44-369d8a2980a7" />
+<img width="1897" height="811" alt="image" src="https://github.com/user-attachments/assets/5d908a21-4628-4db1-a8c1-0c26e91c7e59" />
+
 
 7. Salin Web API Key
 <img width="1910" height="832" alt="image" src="https://github.com/user-attachments/assets/d4e2897c-2b17-4a51-98ac-b4a399fddc9d" />
