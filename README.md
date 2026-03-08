@@ -26,3 +26,6 @@ Persiapan awal sebelum melakukan request pada Postman, langkah pertama adalah me
 7. Salin Web API Key
 <img width="1910" height="832" alt="image" src="https://github.com/user-attachments/assets/d4e2897c-2b17-4a51-98ac-b4a399fddc9d" />
 
+8. Lalu buat Web App
+<img width="1757" height="739" alt="image" src="https://github.com/user-attachments/assets/e76e3308-45a8-436e-a5ac-7e9b60646975" />
+ 
