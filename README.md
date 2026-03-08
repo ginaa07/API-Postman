@@ -10,10 +10,14 @@ Persiapan awal sebelum melakukan request pada Postman, langkah pertama adalah me
 2. Setelah itu membuat project dengan mengAkses Firebase Console 
 <img width="1782" height="808" alt="image" src="https://github.com/user-attachments/assets/794795ce-a8cd-4abc-8c8b-33cf06588cf8" />
 
+
 3. Buat project baru di Firebase
 <img width="1215" height="721" alt="image" src="https://github.com/user-attachments/assets/c5cfee89-d4d6-4bf6-80e4-97a7ea6bd52f" />
 
-4. Aktifkan Authentication: Pilih metode Email/Password pada menu Authentication.
 
-5. Untuk Mendapatkan Web API Key kita Pergi ke Project Settings lalu General
+4. Aktifkan Authentication: Pilih metode Email/Password pada menu Authentication
+<img width="1595" height="753" alt="image" src="https://github.com/user-attachments/assets/27484775-7d39-42bc-a4dc-21783eb68bb1" />
+
+
+6. Untuk Mendapatkan Web API Key kita Pergi ke Project Settings lalu General
 <img width="1888" height="792" alt="image" src="https://github.com/user-attachments/assets/57d61d8e-8ccb-406c-ac44-369d8a2980a7" />
