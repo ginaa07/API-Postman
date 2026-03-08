@@ -39,5 +39,9 @@ Setelah menyelesaikan konfigurasi di Firebase Console (membuat project, mengakti
 3. Masukkan URL berikut di kolom URL : https://identitytoolkit.googleapis.com/v1/accounts:signUp?key={{FIREBASE_API_KEY}}
 4. Pindah ke Tab Headers, tambahkan key = Content-Type, Value = application/json
 <img width="1896" height="378" alt="image" src="https://github.com/user-attachments/assets/6be9f56c-89f6-4841-a1b8-db098e0b228c" />
- 
+
+5. Pindah ke Tab Body (raw JSON)
+pilih raw, lalu Masukkan ini pada body: { "email": "{{USER_EMAIL}}", "password": "{{USER_PASSWORD}}", "returnSecureToken": true }
+<img width="1342" height="388" alt="image" src="https://github.com/user-attachments/assets/84eb35b6-fe8c-465d-bf50-ad8d9e22c65c" />
+
  
