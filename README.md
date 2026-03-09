@@ -40,8 +40,21 @@ Setelah menyelesaikan konfigurasi di Firebase Console (membuat project, mengakti
 4. Pindah ke Tab Headers, tambahkan key = Content-Type, Value = application/json
 <img width="1896" height="378" alt="image" src="https://github.com/user-attachments/assets/6be9f56c-89f6-4841-a1b8-db098e0b228c" />
 
-5. Pindah ke Tab Body (raw JSON)
+5. Lalu pindah ke Tab Body (raw JSON)
 pilih raw, lalu Masukkan ini pada body: { "email": "{{USER_EMAIL}}", "password": "{{USER_PASSWORD}}", "returnSecureToken": true }
 <img width="1342" height="388" alt="image" src="https://github.com/user-attachments/assets/84eb35b6-fe8c-465d-bf50-ad8d9e22c65c" />
 
- 
+ 6. Setekah ke bagian body, kita lanjut ke Pre-request Scripts di Postman agar idToken tersimpan otomatis
+Dengan memasukkan Scripts
+if (pm.response.code === 200) {
+pm.environment.set("FIREBASE_ID_TOKEN", json.idToken);
+pm.environment.set("FIREBASE_LOCAL_ID", json.localId);
+pm.environment.set("FIREBASE_REFRESH_TOKEN", json.refreshToken);
+console.log("Register sukses. UID:", json.localId);
+console.log("PERHATIAN: Email belum diverifikasi. Lanjut ke Step 2.");
+} else {
+console.log("Register gagal:", json.error.message);
+}
+<img width="1250" height="490" alt="image" src="https://github.com/user-attachments/assets/e0d0f784-bfcd-4f96-b34e-98effd2c5eff" />
+terlihat digambar saya ada penambahan code "let json = pm.response.json();
+console.log("isi json", json) karena code yang diatas sebelum gambar itu ID_Token nya belum muncul, namun ketika saya menambahkan code tersebut  bisa langsung muncul di dan merespons 200 ok, Agar Postman bisa "membaca" dan mengambil data spesifik
