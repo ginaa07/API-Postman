@@ -75,7 +75,7 @@ console.log("isi json", json) karena code yang diatas sebelum gambar itu ID_Toke
 setelah selesai langsung klik Send
 <img width="1339" height="517" alt="image" src="https://github.com/user-attachments/assets/786a0d94-648e-412c-acfa-bbf160b766ad" />
 
-Dan kita liat inbox di email akan muncul seperti ini 
+Dan kita bisa klik link yang sudah masuk pesan di Email, dan lihat di inbox di email akan muncul seperti ini 
 <img width="1814" height="439" alt="image" src="https://github.com/user-attachments/assets/f4faadc7-9e0b-4c90-a3fa-f20cca061c0a" />
 
 
