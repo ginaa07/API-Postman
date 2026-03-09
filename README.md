@@ -79,4 +79,6 @@ Dan kita bisa klik link yang sudah masuk pesan di Email, dan lihat di inbox di e
 <img width="1814" height="439" alt="image" src="https://github.com/user-attachments/assets/f4faadc7-9e0b-4c90-a3fa-f20cca061c0a" />
 
 
+<img width="1907" height="839" alt="image" src="https://github.com/user-attachments/assets/14250d92-8e4e-45ba-84c6-dd327254594d" />
+
 
