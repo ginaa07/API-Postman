@@ -57,4 +57,9 @@ console.log("Register gagal:", json.error.message);
 }
 <img width="1250" height="490" alt="image" src="https://github.com/user-attachments/assets/e0d0f784-bfcd-4f96-b34e-98effd2c5eff" />
 terlihat digambar saya ada penambahan code "let json = pm.response.json();
-console.log("isi json", json) karena code yang diatas sebelum gambar itu ID_Token nya belum muncul, namun ketika saya menambahkan code tersebut  bisa langsung muncul di dan merespons 200 ok, Agar Postman bisa "membaca" dan mengambil data spesifik
+console.log("isi json", json) karena code yang diatas sebelum gambar itu ID_Token nya belum muncul, namun ketika saya menambahkan code tersebut  bisa langsung muncul dan merespons 200 ok, Agar Postman bisa "membaca" dan mengambil data spesifik, setelah selesai bisa langsung Send
+
+ Langkah selanjutnya yaitu Verifikasi
+ 1. Buka tab baru pada Postman
+ 2. Ubah method menjadi POST
+<img width="766" height="653" alt="image" src="https://github.com/user-attachments/assets/6370ea96-985d-47b8-be01-be8da006f4ae" />
