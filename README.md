@@ -66,4 +66,17 @@ console.log("isi json", json) karena code yang diatas sebelum gambar itu ID_Toke
 
 3. Masukkan URL berikut di kolom URL : https://identitytoolkit.googleapis.com/v1/accounts:sendOobCode?key={{FIREBASE_API_KEY}}
 4. Pindah ke tab Headers, tambahkan : key = Content-Type, Value = application/json
+<img width="1344" height="304" alt="image" src="https://github.com/user-attachments/assets/b715e1ca-2ae2-4465-a03a-ea37a995c323" />
+
+5. Pindah ke tab Body, pilih raw, selanjutnya masukkan ini: { "requestType": "VERIFY_EMAIL", "idToken": "{{FIREBASE_ID_TOKEN}}" }
+<img width="1309" height="334" alt="image" src="https://github.com/user-attachments/assets/f85fc98b-e26f-4ef0-bb19-304501b6d113" />
+
+6. Masuk ke bagian Scripts, pastikan pilih yang Post-reponse: if (pm.response.code === 200) { const json = pm.response.json(); console.log("Email verifikasi dikirim ke:", json.email); console.log("Sekarang buka inbox email dan klik link verifikasi."); console.log("Setelah klik, lanjut ke Step 3 untuk cek status."); } else { console.log("Gagal kirim email:", pm.response.json().error.message); }
+setelah selesai langsung klik Send
+<img width="1339" height="517" alt="image" src="https://github.com/user-attachments/assets/786a0d94-648e-412c-acfa-bbf160b766ad" />
+
+Dan kita liat inbox di email akan muncul seperti ini 
+<img width="1814" height="439" alt="image" src="https://github.com/user-attachments/assets/f4faadc7-9e0b-4c90-a3fa-f20cca061c0a" />
+
+
 
