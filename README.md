@@ -63,3 +63,7 @@ console.log("isi json", json) karena code yang diatas sebelum gambar itu ID_Toke
  1. Buka tab baru pada Postman
  2. Ubah method menjadi POST
 <img width="766" height="653" alt="image" src="https://github.com/user-attachments/assets/6370ea96-985d-47b8-be01-be8da006f4ae" />
+
+3. Masukkan URL berikut di kolom URL : https://identitytoolkit.googleapis.com/v1/accounts:sendOobCode?key={{FIREBASE_API_KEY}}
+4. Pindah ke tab Headers, tambahkan : key = Content-Type, Value = application/json
+
