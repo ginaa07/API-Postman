@@ -114,11 +114,11 @@ Pada tahap ini, saya melakukan konfigurasi pada Firebase Authentication Template
 Pada dua tahap akhir ini pada Modul yaitu Firebase Token ke Backend dan Akses Protected Endpoint (GET /products), namun saya akan menjelaskan secara singkat 
 
 Langkah 5: Firebase Token ke Backend
-Penjelasan dari saya pribadi: Setelah mendapatkan idToken dari Firebase (yang memiliki masa aktif singkat, yaitu 60 menit), kita mengirimkan token tersebut ke Backend melalui endpoint POST /auth/verify-token.
+Penjelasan dari saya pribadi: Setelah mendapatkan idToken dari Firebase (yang memiliki masa aktif singkat, yaitu 60 menit), kita mengirimkan token tersebut ke Backend melalui endpoint POST/auth/verify-token.
 yang tujuan nya adalah Backend akan memvalidasi apakah user tersebut benar-benar terverifikasi di Firebase. Jika valid, Backend akan menerbitkan Backend JWT Token.
 untuk Kelebihan Backend ini Seperti yang dipahami, token ini lebih fleksibel karena masa berlakunya bisa diatur lebih lama (misal 24 jam) dan isinya bisa dikustomisasi sesuai kebutuhan sistem kita (seperti menambahkan role user).
 
-Langkah 6: Akses Protected Endpoint (GET /products)
-Penjelasan dari saya pribadi ini adalah tahap pengujian apakah sistem keamanan kita sudah berjalan dengan benar. Kita mencoba mengambil data produk melalui endpoint GET /products.
+Langkah 6: Akses Protected Endpoint (GET/products)
+Penjelasan dari saya pribadi ini adalah tahap pengujian apakah sistem keamanan kita sudah berjalan dengan benar. Kita mencoba mengambil data produk melalui endpoint GET/products.
 Secara Mekanisme itu untuk mendapatkan data, kita wajib menyertakan Backend Token di dalam Header sebagai Bearer Token.
-Analogi Keamanan: Token ini ibarat "tiket masuk". Jika kita mencoba mengambil data tanpa login (tanpa token), maka Backend akan menolak permintaan tersebut dan mengembalikan error 401 Unauthorized. Ini membuktikan bahwa data produk terlindungi dan hanya bisa diakses oleh user yang sah.
+Analogi Keamanan nya seperti Token ini ibarat "tiket masuk". Jika kita mencoba mengambil data tanpa login (tanpa token), maka Backend akan menolak permintaan tersebut dan mengembalikan error 401 Unauthorized. Ini membuktikan bahwa data produk terlindungi dan hanya bisa diakses oleh user yang sah.
