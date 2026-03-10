@@ -83,8 +83,8 @@ Langkah 3 (Cek Status Verifikasi Email): Untuk Cek Verifikasi Email ada 2 Cara, 
 
 Cara A Cek langsung ke Firebase (accounts:lookup):
 
-1. Pakai URL (Endpoint) yang ini: https://identitytoolkit.googleapis.com/v1/accounts:lookup?key={{FIREBASE_API_KEY}}
-2. Request Body: { "idToken": "{{FIREBASE_ID_TOKEN}}" }
+1. Pakai URL (Endpoint) : https://identitytoolkit.googleapis.com/v1/accounts:lookup?key={{FIREBASE_API_KEY}}
+2. Untuk Request Body: { "idToken": "{{FIREBASE_ID_TOKEN}}" }
 <img width="1330" height="403" alt="image" src="https://github.com/user-attachments/assets/09f14fac-cd8c-4082-9eef-818b4b405163" />
 Dan untuk Response Sukses nya seperti ini
 <img width="1327" height="765" alt="image" src="https://github.com/user-attachments/assets/6735262c-6e89-41fe-b651-331a9495b302" />
@@ -96,8 +96,8 @@ Cara B Cek via Backend (POST /auth/verify-token):
 
 Langkah 4 selanjutnya dengan (Login dengan Email & Password):
 
-1. Endpoint : https://identitytoolkit.googleapis.com/v1/accounts:signInWithPassword?key={{FIREBASE_API_KEY}}
-2. Untuk Pre-Request Body: { "email": "{{USER_EMAIL}}", "password": "{{USER_PASSWORD}}", "returnSecureToken": true }
+1. Masukkan Endpoint URL : https://identitytoolkit.googleapis.com/v1/accounts:signInWithPassword?key={{FIREBASE_API_KEY}}
+2. Untuk Request Body: { "email": "{{USER_EMAIL}}", "password": "{{USER_PASSWORD}}", "returnSecureToken": true }
 <img width="1266" height="424" alt="image" src="https://github.com/user-attachments/assets/40ee79e0-86af-4823-8f3d-0d7db177f33a" />
 3. Dan untuk Test Script — Auto-update Token: // Postman → Tests tab: const json = pm.response.json(); if (pm.response.code === 200) { // Update environment dengan idToken BARU hasil login pm.environment.set("FIREBASE_ID_TOKEN", json.idToken); pm.environment.set("FIREBASE_REFRESH_TOKEN", json.refreshToken); console.log("Login berhasil. Token diperbarui."); console.log("Lanjut ke Step 5: kirim token ke backend."); } else { console.log("Login gagal:", json.error.message); }
 <img width="1282" height="644" alt="image" src="https://github.com/user-attachments/assets/6a26f09f-c9e5-4daf-a44a-75a08f293e40" />
@@ -108,7 +108,7 @@ Dan untuk Response Sukses nya seperti ini
 <img width="1334" height="405" alt="image" src="https://github.com/user-attachments/assets/c4d2ece0-0b71-486e-9a29-1fa69801744c" />
 <img width="1279" height="412" alt="image" src="https://github.com/user-attachments/assets/863eed16-8dd6-43fd-9939-b7205005d43e" />
 
-CUSTOM TEMPLATE: Disini kita bisa Custom Template Email Verifikasi nya pada Firebase, Walaupun kita tidak bisa mengubah Body nya, Tapi kita bisa mengubah subject dan Nama Pengirim nya, Seperti digambar Berikut ini
+Firebase Custom Template: Disini kita bisa Custom Template Email Verifikasi nya pada Firebase, Walaupun kita tidak bisa mengubah Body nya, Tapi kita bisa mengubah subject dan Nama Pengirim nya, Seperti digambar Berikut ini
 <img width="1073" height="777" alt="image" src="https://github.com/user-attachments/assets/c7da0138-3cfa-454d-b016-4d3de81d2b23" />
 
 
