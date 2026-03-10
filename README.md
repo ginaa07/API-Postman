@@ -81,4 +81,26 @@ Dan kita bisa klik link yang sudah masuk pesan di Email, dan lihat di inbox di e
 
 <img width="1907" height="839" alt="image" src="https://github.com/user-attachments/assets/14250d92-8e4e-45ba-84c6-dd327254594d" />
 
+Langkah 3 (Cek Status Verifikasi Email): Untuk Cek Verifikasi Email ada 2 Cara, bisa langsung ke firebase atau Via Backend.
+
+Cara A Cek langsung ke Firebase (accounts:lookup):
+
+1. Pakai URL (Endpoint) yang ini: https://identitytoolkit.googleapis.com/v1/accounts:lookup?key={{FIREBASE_API_KEY}}
+2. Request Body: { "idToken": "{{FIREBASE_ID_TOKEN}}" }
+<img width="1330" height="403" alt="image" src="https://github.com/user-attachments/assets/09f14fac-cd8c-4082-9eef-818b4b405163" />
+<img width="1327" height="765" alt="image" src="https://github.com/user-attachments/assets/6735262c-6e89-41fe-b651-331a9495b302" />
+
+Cara B Cek via Backend (POST /auth/verify-token):
+1. Endpoint: {{BACKEND_BASE_URL}}/auth/verify-token
+2. Request Body: { "firebase_token": "{{FIREBASE_ID_TOKEN}}" }
+<img width="1787" height="434" alt="image" src="https://github.com/user-attachments/assets/f2d1f231-3588-4dbc-a2b5-ab2ded2ad7f6" />
+
+Langkah 4 selanjutnya dengan (Login dengan Email & Password):
+
+1. Endpoint : https://identitytoolkit.googleapis.com/v1/accounts:signInWithPassword?key={{FIREBASE_API_KEY}}
+2. Untuk Pre-Request Body: { "email": "{{USER_EMAIL}}", "password": "{{USER_PASSWORD}}", "returnSecureToken": true }
+
+
+
+
 
