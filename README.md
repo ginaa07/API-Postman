@@ -19,14 +19,14 @@ Persiapan awal sebelum melakukan request pada Postman, langkah pertama adalah me
 <img width="1595" height="753" alt="image" src="https://github.com/user-attachments/assets/27484775-7d39-42bc-a4dc-21783eb68bb1" />
 
 
-6. Untuk Mendapatkan Web API Key kita Pergi ke Project Settings lalu General
+5. Untuk Mendapatkan Web API Key kita Pergi ke Project Settings lalu General
 <img width="1897" height="811" alt="image" src="https://github.com/user-attachments/assets/5d908a21-4628-4db1-a8c1-0c26e91c7e59" />
 
 
-7. Salin Web API Key
+6. Salin Web API Key
 <img width="1910" height="832" alt="image" src="https://github.com/user-attachments/assets/d4e2897c-2b17-4a51-98ac-b4a399fddc9d" />
 
-8. Lalu buat Web App
+7. Lalu buat Web App
 <img width="1757" height="739" alt="image" src="https://github.com/user-attachments/assets/e76e3308-45a8-436e-a5ac-7e9b60646975" />
 
 Setelah menyelesaikan konfigurasi di Firebase Console (membuat project, mengaktifkan Auth, dan menyalin Web API Key), Lalu buka aplikasi Postman dan ikuti urutan berikut:
