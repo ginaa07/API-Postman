@@ -79,8 +79,6 @@ Dan kita bisa klik link yang sudah masuk pesan di Email, dan lihat di inbox di e
 <img width="1814" height="439" alt="image" src="https://github.com/user-attachments/assets/f4faadc7-9e0b-4c90-a3fa-f20cca061c0a" />
 
 
-<img width="1907" height="839" alt="image" src="https://github.com/user-attachments/assets/14250d92-8e4e-45ba-84c6-dd327254594d" />
-
 Langkah 3 (Cek Status Verifikasi Email): Untuk Cek Verifikasi Email ada 2 Cara, bisa langsung ke firebase atau Via Backend.
 
 Cara A Cek langsung ke Firebase (accounts:lookup):
@@ -99,6 +97,12 @@ Langkah 4 selanjutnya dengan (Login dengan Email & Password):
 
 1. Endpoint : https://identitytoolkit.googleapis.com/v1/accounts:signInWithPassword?key={{FIREBASE_API_KEY}}
 2. Untuk Pre-Request Body: { "email": "{{USER_EMAIL}}", "password": "{{USER_PASSWORD}}", "returnSecureToken": true }
+<img width="1266" height="424" alt="image" src="https://github.com/user-attachments/assets/40ee79e0-86af-4823-8f3d-0d7db177f33a" />
+Dan untuk Response Sukses nya seperti ini
+<img width="1334" height="405" alt="image" src="https://github.com/user-attachments/assets/c4d2ece0-0b71-486e-9a29-1fa69801744c" />
+<img width="1279" height="412" alt="image" src="https://github.com/user-attachments/assets/863eed16-8dd6-43fd-9939-b7205005d43e" />
+
+
 
 
 
