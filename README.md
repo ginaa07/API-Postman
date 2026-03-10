@@ -108,7 +108,7 @@ Dan untuk Response Sukses nya seperti ini
 <img width="1334" height="405" alt="image" src="https://github.com/user-attachments/assets/c4d2ece0-0b71-486e-9a29-1fa69801744c" />
 <img width="1279" height="412" alt="image" src="https://github.com/user-attachments/assets/863eed16-8dd6-43fd-9939-b7205005d43e" />
 
-Firebase Custom Template: Disini kita bisa Custom Template Email Verifikasi nya pada Firebase, Walaupun kita tidak bisa mengubah Body nya, Tapi kita bisa mengubah subject dan Nama Pengirim nya, Seperti digambar Berikut ini
+Pada tahap ini, saya melakukan konfigurasi pada Firebase Authentication Templates. Meskipun Firebase memiliki batasan untuk tidak mengubah isi (body) email secara penuh demi keamanan, kita tetap dapat melakukan personalisasi pada Sender Name (Nama Pengirim) dan Reply-to. Hal ini penting untuk meningkatkan brand trust agar user mengenali bahwa email verifikasi tersebut resmi dikirim oleh aplikasi kita. terlihat pada gambar berikut ini:
 <img width="1073" height="777" alt="image" src="https://github.com/user-attachments/assets/c7da0138-3cfa-454d-b016-4d3de81d2b23" />
 
 
