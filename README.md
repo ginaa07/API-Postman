@@ -111,10 +111,14 @@ Dan untuk Response Sukses nya seperti ini
 Pada tahap ini, saya melakukan konfigurasi pada Firebase Authentication Templates. Meskipun Firebase memiliki batasan untuk tidak mengubah isi (body) email secara penuh demi keamanan, kita tetap dapat melakukan personalisasi pada Sender Name (Nama Pengirim) dan Reply-to. Hal ini penting untuk meningkatkan brand trust agar user mengenali bahwa email verifikasi tersebut resmi dikirim oleh aplikasi kita. terlihat pada gambar berikut ini:
 <img width="1073" height="777" alt="image" src="https://github.com/user-attachments/assets/c7da0138-3cfa-454d-b016-4d3de81d2b23" />
 
+Pada dua tahap akhir ini, fokus utama adalah bagaimana kita menggunakan identitas dari Firebase untuk mendapatkan akses ke sistem internal kita (Backend).
 
+Langkah 5: Pertukaran Token (Firebase Token to Backend Token)
+Penjelasan dari saya pribadi: Setelah mendapatkan idToken dari Firebase (yang memiliki masa aktif singkat, yaitu 60 menit), kita mengirimkan token tersebut ke Backend melalui endpoint POST /auth/verify-token.
+yang Tujuan nya adalah Backend akan memvalidasi apakah user tersebut benar-benar terverifikasi di Firebase. Jika valid, Backend akan menerbitkan Backend JWT Token.
+untuk Kelebihan Backend ini Seperti yang dipahami, token ini lebih fleksibel karena masa berlakunya bisa diatur lebih lama (misal 24 jam) dan isinya bisa dikustomisasi sesuai kebutuhan sistem kita (seperti menambahkan role user).
 
-
-
-
-
-
+Langkah 6: Akses Protected Endpoint (GET /products)
+Penjelasan dari saya pribadi ini adalah tahap pengujian apakah sistem keamanan kita sudah berjalan dengan benar. Kita mencoba mengambil data produk melalui endpoint GET /products.
+Secara Mekanisme itu untuk mendapatkan data, kita wajib menyertakan Backend Token di dalam Header sebagai Bearer Token.
+Analogi Keamanan: Token ini ibarat "tiket masuk". Jika kita mencoba mengambil data tanpa login (tanpa token), maka Backend akan menolak permintaan tersebut dan mengembalikan error 401 Unauthorized. Ini membuktikan bahwa data produk terlindungi dan hanya bisa diakses oleh user yang sah.
