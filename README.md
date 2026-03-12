@@ -44,7 +44,7 @@ Setelah menyelesaikan konfigurasi di Firebase Console (membuat project, mengakti
 pilih raw, lalu Masukkan ini pada body: { "email": "{{USER_EMAIL}}", "password": "{{USER_PASSWORD}}", "returnSecureToken": true }
 <img width="1342" height="388" alt="image" src="https://github.com/user-attachments/assets/84eb35b6-fe8c-465d-bf50-ad8d9e22c65c" />
 
- 6. Setekah ke bagian body, kita lanjut ke Pre-request Scripts di Postman agar idToken tersimpan otomatis
+ 6. Setelah ke bagian body, kita lanjut ke Pre-request Scripts di Postman agar idToken tersimpan otomatis
 Dengan memasukkan Scripts
 if (pm.response.code === 200) {
 pm.environment.set("FIREBASE_ID_TOKEN", json.idToken);
